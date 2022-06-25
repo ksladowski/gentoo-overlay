@@ -1,4 +1,4 @@
-# gentoo_overlay
+# gentoo-overlay
 Personal gentoo overlay for packages without ebuilds
 
 ## Disclaimer
