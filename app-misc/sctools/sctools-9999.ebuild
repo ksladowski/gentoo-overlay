@@ -16,3 +16,12 @@ KEYWORDS="~amd64 ~x86"
 DEPEND="dev-libs/hidapi"
 RDEPEND="${DEPEND}"
 BDEPEND=""
+
+src_prepare() {
+	autoreconf -i
+	econf
+}
+
+src_install(){
+	emake DESTDIR="${D}" install
+}
