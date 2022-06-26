@@ -1,9 +1,9 @@
 # Copyright 2022 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
-inherit git-r3 autotools
-
 EAPI=8
+
+inherit git-r3 autotools
 
 DESCRIPTION="Replacement for original Soarer's converter tools"
 HOMEPAGE="https://github.com/thentenaar/sctools"
