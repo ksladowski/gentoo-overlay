@@ -6,12 +6,12 @@ EAPI=8
 DESCRIPTION="Replacement for original Soarer's converter tools"
 HOMEPAGE="https://github.com/thentenaar/sctools"
 
-include git-r3
+inherit git-r3
 EGIT_REPO_URI="https://github.com/thentenaar/sctools"
 
 LICENSE="BSD-2"
 SLOT="0"
-KEYWORDS=""
+KEYWORDS="~amd64 ~x86"
 
 DEPEND="dev-libs/hidapi"
 RDEPEND="${DEPEND}"
