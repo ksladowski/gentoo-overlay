@@ -1,12 +1,13 @@
 # Copyright 2022 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
+inherit git-r3 autotools
+
 EAPI=8
 
 DESCRIPTION="Replacement for original Soarer's converter tools"
 HOMEPAGE="https://github.com/thentenaar/sctools"
 
-inherit git-r3
 EGIT_REPO_URI="https://github.com/thentenaar/sctools"
 
 LICENSE="BSD-2"
@@ -18,7 +19,11 @@ RDEPEND="${DEPEND}"
 BDEPEND=""
 
 src_prepare() {
-	autoreconf -i
+	default
+	eautoreconf
+}
+
+src_configure(){
 	econf
 }
 
